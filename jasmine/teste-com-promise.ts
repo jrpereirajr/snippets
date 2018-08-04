@@ -10,7 +10,8 @@ describe('teste com promise ', () => {
         expect(cliente).toBeDefined();
         // resolve a promise do teste, assim informando ao jasmine que o teste finalizou
         resolve();
-      });
+      })
+      .catch(err => reject(err));
     });
   });
   
